@@ -1,9 +1,11 @@
 var express = require('express');
+var fs= require('fs');
 
 var app = express.createServer(express.logger());
 
 var readFile=function(path){
-    return "pepepepe";
+    var buf=new Buffer(fs.readFileSync(path));
+    return buf.toString();
 };
 
 app.get('/', function(request, response) {
