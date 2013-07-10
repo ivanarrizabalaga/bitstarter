@@ -7,7 +7,7 @@ var readFile=function(path){
 };
 
 app.get('/', function(request, response) {
-  response.send(readFile('index.html');
+  response.send(readFile('index.html'));
 });
 
 var port = process.env.PORT || 5000;
