@@ -19,6 +19,11 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"/>
     <style>
 
+      div.addthis_toolbox {
+      width:250px;
+      margin: 0 auto;
+      }
+
       /* Large desktop */
       @media (min-width: 980px) { 
         body {
@@ -496,12 +501,26 @@
                       <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
                       <button class="btn btn-success btn-large">Preorder</button>
                     </div>
-                    <div class="span8 offset2 social">
-                      <!-- Social buttons are not included in default Bootstrap. -->
-                      <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-                      <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-                      <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-                    </div>
+
+		    <!-- AddThis Button BEGIN -->
+		    <div class="span8 offset2 social">
+		    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		      <a class="addthis_button_preferred_1"></a>
+		      <a class="addthis_button_preferred_2"></a>
+		      <a class="addthis_button_preferred_3"></a>
+		      <a class="addthis_button_preferred_4"></a>
+		      <!---<a class="addthis_button_compact"></a>-->
+		      <a class="addthis_counter addthis_bubble_style"></a>
+		    </div>
+		    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52008e5b4002ed84"></script>
+		    <!-- AddThis Button END -->
+		    </div>
+
+
+
+
+
                   </div>  
       </div>
 
