@@ -20,8 +20,8 @@
     <style>
 
       div.addthis_toolbox {
-      width:250px;
-      margin: 0 auto;
+		width:250px;
+		margin: 0 auto;
       }
 
       /* Large desktop */
@@ -57,6 +57,7 @@
     body {
       padding-bottom: 40px;
       color: #5a5a5a;
+	  background: url(http://i.imgur.com/1bIhO6t.png);
     }
 
     /* Main body and headings */
@@ -215,6 +216,26 @@
 
     /* Featurettes
     ------------------------- */
+	
+
+	.featurette ul{
+		list-style: none;  
+		font-size: 21px;
+		font-weight: 200;
+	}
+	
+	.featurette li:before { 
+		content: "";
+		border-color: transparent #111;
+		border-style: solid;
+		border-width: 0.35em 0 0.35em 0.45em;
+		display: block;
+		height: 0;
+		width: 0;
+		left: -1em;
+		top: 0.9em;
+		position: relative;
+	}	
 
     .featurette-divider {
       margin: 80px 0; /* Space out the Bootstrap <hr> more */
@@ -244,7 +265,7 @@
     }
 
     .backers{
-      background-image: url('http://i.imgur.com/x0Q0yNf.png');
+      background-image: url('http://i.imgur.com/h2MI7H9.png');
       text-align: center;
       padding-top: 10px;      
     }
@@ -467,7 +488,7 @@ ga('send', 'pageview');
       <div class="row-flui">
           <div class="offset3 span6 subheading" style="text-align:center">
                 <h1><img src="http://i.imgur.com/tWsjlM8.png" alt="qizz.me" title="qizz.me"/><h1>
-                <p class="lead">The social wiki quizz</p>              
+                <p class="lead">The social wiki quiz</p>              
           </div>
       </div>
       <!-- Video and social -->
@@ -574,19 +595,39 @@ Once we get there the future is ours:
   ...
 -->
 
-
-  <div class="featurette">
+	<hr class="featurette-divider">
+	<div class="featurette">
         <img class="featurette-image pull-right" alt="smart is cool" src="http://getbootstrap.com/2.3.2/assets/img/examples/browser-icon-chrome.png">
         <h2 class="featurette-heading">Being smart is <span class="muted">cool</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+
+		<p class="lead">
+			No one knows more than you about 'Chuck'?<br>
+			<ul>
+			  <li>Help us creating questions about it</li>
+			  <li>Show the world you're awesome</li>
+			  <li>Find out the smartest! Any topic, any location:D</li>
+			</ul>
+		</p>		
+        
       </div>
 
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-left" alt="your own quizzes" src="http://getbootstrap.com/2.3.2/assets/img/examples/browser-icon-firefox.png">
+        <img class="featurette-image pull-right" alt="your own quizzes" src="http://getbootstrap.com/2.3.2/assets/img/examples/browser-icon-firefox.png">
         <h2 class="featurette-heading">Your  <span class="muted">own</span> quizzes</h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		<p class="lead">
+			You're in charge of creating and tagging your own questions about anything.
+		</p>
+		<p class="lead">
+			Manage questions from dashboard or even with DM from twitter. A question is made of:<br/>
+			<ul>
+				<li>brief text (max 130 chars)</li>
+				<li>3 options (only 1 is right)</li>
+				<li>3 tags</li>
+		    </ul>			
+		</p>		
+
       </div>
 
       <hr class="featurette-divider">
@@ -594,7 +635,18 @@ Once we get there the future is ours:
       <div class="featurette">
         <img class="featurette-image pull-right" alt="biggest little wiki" src="http://getbootstrap.com/2.3.2/assets/img/examples/browser-icon-safari.png">
         <h2 class="featurette-heading">The biggest 'short' <span class="muted">wiki.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		<p class="lead">
+			Our dream is to create the greatest knowledge database made of <strong>little pieces</strong><br/>
+			open to any topic, so be can:
+			<ul>
+				<li>Build a JSON API</li>
+				<li>Automatically propose answers to questions</li>
+				<li>Create private quizzes</li>
+				<li>Reward contributors and players</li>
+		    </ul>			
+		</p>	
+
+        
       </div>
 
       <hr class="featurette-divider">
