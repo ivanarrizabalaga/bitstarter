@@ -2,6 +2,7 @@
 <!-- saved from url=(0063)http://twitter.github.io/bootstrap/2.3.2/examples/carousel.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
+	<link rel="shortcut icon" href="/public/images/favicon.ico" />
     <title>qizz.me-The social wiki quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -448,8 +449,8 @@ ga('send', 'pageview');
           <div class="container">
             <div class="carousel-caption">
               <h1>The greatest quizz on earth</h1>
-              <p class="lead">Help us creating the greatest quizz on earth,<br/>any topic, any language,<br/>to learn and play</p>
-              <a class="btn btn-large btn-primary" href="http://twitter.github.io/bootstrap/2.3.2/examples/carousel.html#">Sign up today</a>
+              <p class="lead">Help us creating the greatest quiz on earth,<br/>any topic, any language,<br/>to learn and play</p>
+              <a class="btn btn-large btn-primary" href="#earth">More ...</a>
             </div>
           </div>
         </div>
@@ -459,7 +460,7 @@ ga('send', 'pageview');
             <div class="carousel-caption">
               <h1>Deal your questions</h1>
               <p class="lead">Manage your own questions,<br/>tag them, share them and <br/>challenge other people.</p>
-              <a class="btn btn-large btn-primary" href="http://twitter.github.io/bootstrap/2.3.2/examples/carousel.html#">Learn more</a>
+              <a class="btn btn-large btn-primary" href="#yourquestions">More ...</a>
             </div>
           </div>
         </div>
@@ -469,7 +470,7 @@ ga('send', 'pageview');
             <div class="carousel-caption">
               <h1>Get your reward</h1>
               <p class="lead">Smartest people in each category get rewarded,<br/>show the world you're awesome!</p>
-              <a class="btn btn-large btn-primary" href="http://twitter.github.io/bootstrap/2.3.2/examples/carousel.html#">Browse gallery</a>
+              <a class="btn btn-large btn-primary" href="#rewards">More ...</a>
             </div>
           </div>
         </div>
@@ -485,8 +486,8 @@ ga('send', 'pageview');
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-      <div class="row-flui">
-          <div class="offset3 span6 subheading" style="text-align:center">
+      <div class="row-fluid">
+          <div class="offset3 span5 subheading" style="text-align:center">
                 <h1><img src="http://i.imgur.com/tWsjlM8.png" alt="qizz.me" title="qizz.me"/><h1>
                 <p class="lead">The social wiki quiz</p>              
           </div>
@@ -565,57 +566,29 @@ ga('send', 'pageview');
 
 
       <!-- START THE FEATURETTES -->
-<!--
-
-Being smart is cool
-
-No one knows more than you about 'Chuck'?
-Help us creating questions about it and show the world you're awesome.
-Smartest people of each topic could get rewarded! :D
-
-------------------------------
-Your own quizzes
-
-You're in charge of creating and tagging your own questions about anything.
-One question is made of:
-  brief text (max 130 chars)
-  3 options (only 1 is right)
-  3 tags
-You can manage questions from the dashboard or even add new questions directly by sending us a twitter! 
-
-------------------------------
-The biggest 'little' wiki
-
-With you and others like you we will create millions of categorized answers.
-It would be like having the library of Alexandria splited into bits, :D
-Once we get there the future is ours:
-  JSON API
-  Private Quizzes
-  Automated answers to questions
-  ...
--->
 
 	<hr class="featurette-divider">
-	<div class="featurette">
-        <img class="featurette-image pull-right" alt="smart is cool" src="http://getbootstrap.com/2.3.2/assets/img/examples/browser-icon-chrome.png">
-        <h2 class="featurette-heading">Being smart is <span class="muted">cool</span></h2>
-
+	  
+      <div class="featurette">
+        <img class="featurette-image pull-right" alt="biggest little wiki" src="http://i.imgur.com/kj6KhDp.png">
+        <h2 id="earth" name="earth" class="featurette-heading">The biggest 'short' <span class="muted">wiki.</span></h2>
 		<p class="lead">
-			No one knows more than you about 'Chuck'?<br>
+			Our dream is to create the greatest knowledge database made of <strong>little pieces</strong><br/>
+			open to any topic, so be can:
 			<ul>
-			  <li>Help us creating questions about it</li>
-			  <li>Show the world you're awesome</li>
-			  <li>Find out the smartest! Any topic, any location:D</li>
-			</ul>
-		</p>		
-        
-      </div>
+				<li>Build a JSON API</li>
+				<li>Automatically propose answers to questions</li>
+				<li>Create private quizzes</li>
+				<li>Reward contributors and players</li>
+		    </ul>			
+		</p>	        
+      </div>	  
 
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" alt="your own quizzes" src="http://getbootstrap.com/2.3.2/assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Your  <span class="muted">own</span> quizzes</h2>
+        <img class="featurette-image pull-right" alt="your own quizzes" src="http://i.imgur.com/8pHIqd1.png">
+        <h2 id="yourquestions" name="yourquestions" class="featurette-heading">Your  <span class="muted">own</span> quizzes</h2>
 		<p class="lead">
 			You're in charge of creating and tagging your own questions about anything.
 		</p>
@@ -627,25 +600,22 @@ Once we get there the future is ours:
 				<li>3 tags</li>
 		    </ul>			
 		</p>		
-
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="featurette">
-        <img class="featurette-image pull-right" alt="biggest little wiki" src="http://getbootstrap.com/2.3.2/assets/img/examples/browser-icon-safari.png">
-        <h2 class="featurette-heading">The biggest 'short' <span class="muted">wiki.</span></h2>
-		<p class="lead">
-			Our dream is to create the greatest knowledge database made of <strong>little pieces</strong><br/>
-			open to any topic, so be can:
-			<ul>
-				<li>Build a JSON API</li>
-				<li>Automatically propose answers to questions</li>
-				<li>Create private quizzes</li>
-				<li>Reward contributors and players</li>
-		    </ul>			
-		</p>	
+	<div class="featurette">
+        <img class="featurette-image pull-right" alt="smart is cool" src="http://getbootstrap.com/2.3.2/assets/img/examples/browser-icon-chrome.png">
+        <h2 id="rewards" name="rewards" class="featurette-heading">Being smart is <span class="muted">cool</span></h2>
 
+		<p class="lead">
+			No one knows more than you about 'Chuck'?<br>
+			<ul>
+			  <li>Help us creating questions about it</li>
+			  <li>Show the world you're awesome</li>
+			  <li>Find out the smartest! Any topic, any location:D</li>
+			</ul>
+		</p>		
         
       </div>
 
